@@ -188,8 +188,8 @@ class MusicLibrary(object):
         'number refers to the item number in the search results.
 
         Examples:
-        ml_playlist metallica
-        ml_playlist metallica add 3
+        ml_playlists metallica
+        ml_playlists metallica add 3
         """
         for string in self._search_and_play(sonos, 'playlists', *args):
             yield string
